@@ -1,0 +1,38 @@
+* {box-sizing: border-box;}
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'SUIT','Noto Sans KR', sans-serif;
+}
+h1, h2, h3, h4, h5, h6, main, header, footer, section, article, aside, address, div, p, a, span, em, strong, del, s, i, b, ol, ul, li, dl, dt, dd,  table, thead, tbody, tfoot, tr, th, td, form, fieldset, legend, label, input, textarea, button, q, blockquote, sup, sub, img, video, figure, figcaption {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  font-size: 1em;
+  font-style: normal;
+  text-decoration: none;
+  font-weight: normal;
+  color:#333;
+}
+table, tr, th, td {
+  border-collapse: collapse;
+  text-align: left;
+}
+fieldset, input {
+  border :0;
+}
+ul, ol, li {
+  list-style: none;
+}
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+a {
+  text-decoration: none;
+  color:#333
+}
+pre {
+  text-wrap: wrap;
+}

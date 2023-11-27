@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>시선</title>
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <script src="./assets/js/index.js"></script>
+</head>
+<body>
+  <div id="root" class="main">
+    <header>
+      <div class="inner">
+        <h1 class="title"><a href="/">전다해의 포트폴리오</a></h1>
+      </div>
+    </header>
+    <main>
+      <section class="container intro">
+        <div class="inner">
+          <div class="intro-ment">
+            <div class="main-ment">
+              안녕하세요 풀스택 개발자를 꿈꾸는 전다해입니다.<br>
+              저의 포트폴리오 사이트는 개발중에 있습니다.
+            </div>
+            <div class="sub-ment">
+              조금만 더 기다려 주시면 예쁘게 단장해서 나타나겠습니다. 저의 포트폴리오 사이트에 발걸음 해주셔서 감사합니다.
+            </div>
+          </div>
+          <div class="move-arrow">
+            <figure>
+              <img src="./assets/img/move-arrow.png" alt="스크롤">
+            </figure>
+            <span>스크롤</span>
+          </div>
+        </div>
+      </section>
+      <section class="container portfolio-list">
+        <div class="inner">
+          <h2>포트폴리오 리스트</h2>
+          <div class="portfolio">
+            <article onclick="linkHandler()">
+              <figure>
+                <img src="./assets/img/none-image.png" alt="준비중인 사이트입니다.">
+              </figure>
+              <h3 class="list-title"><a href="/">시선 | <span class="list-sub-title">시선을 맞추고</span></a></h2>
+              <ul class="tag-list">
+                <li class="tag react">REACT</li>
+                <li class="tag node">NODE</li>
+                <li class="tag mysql">MYSQL</li>
+                <li class="tag express">EXPRESS</li>
+              </ul>
+            </article>
+            <article onclick="linkHandler()">
+              <figure>
+                <img src="./assets/img/none-image.png" alt="준비중인 사이트입니다.">
+              </figure>
+              <h3 class="list-title"><a href="/">프로그래머스 | <span class="list-sub-title">프로젝트 사이트 모음</span></a></h2>
+              <ul class="tag-list">
+                <li class="tag html">HTML</li>
+                <li class="tag css">CSS</li>
+                <li class="tag js">Javascript</li>
+              </ul>
+            </article>
+            <article onclick="linkHandler()">
+              <figure>
+                <img src="./assets/img/none-image.png" alt="준비중인 사이트입니다.">
+              </figure>
+              <h3 class="list-title"><a href="/">COMPANY | <span class="list-sub-title">제작 사이트 모음</span></a></h2>
+              <ul class="tag-list">
+                <li class="tag html">HTML</li>
+                <li class="tag css">CSS</li>
+                <li class="tag js">Javascript</li>
+                <li class="tag php">PHP</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="inner">
+        전다해의 포트폴리오 &copy; 2023
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

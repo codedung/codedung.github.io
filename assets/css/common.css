@@ -1,0 +1,51 @@
+header {
+  background: rgba(255,255,255, 0.4);
+  border-bottom: 1px solid #eee;
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+}
+header .inner {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 5rem 1rem ;
+}
+header .title a {
+  font-family: 'Orbit-Regular', sans-serif;
+  font-size: 2rem;
+  position: relative;
+}
+header .title a::after {
+  content :'';
+  display: block;
+  width: 5px;
+  height: 70%;
+  background: #333;
+  position: absolute;
+  left: -1rem;
+  top:50%;
+  transform: translateY(-40%);
+}
+
+footer {
+  border-top:1px solid #333;
+  background: #222;
+}
+footer .inner {
+  width: 1280px;
+  margin: 0 auto;
+  padding : 3rem 0;
+  color:#ccc;
+}
+
+@media screen and (max-width : 1280px) {
+  header .inner,
+  footer .inner {width: 90%;}
+}
+@media screen and (max-width : 500px ) {
+  header .title a {
+    font-size: 1.5rem;
+  }
+}

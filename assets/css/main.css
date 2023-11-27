@@ -1,0 +1,153 @@
+.main {
+
+}
+.main .container {margin-bottom: 6rem;}
+.main .container:last-child {margin-bottom: none;}
+.main .container .inner {
+  width: 1280px;
+  height: 100%;
+  margin: auto;
+}
+/* 소개 visual */
+.main .intro {
+  background: linear-gradient(45deg, #ffafaf, #63c5b8 );
+  background-attachment: fixed;
+  animation: move-background 10s linear infinite;
+  position: relative;
+}
+.main .intro .inner {
+  min-height: calc(100vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .intro .move-arrow {
+  position: absolute;
+  left: 50%;
+  bottom:3rem;
+  display: flex;
+  align-items: center;
+  animation: move-arrow 0.5s ease-in infinite alternate;
+}
+.main .intro .move-arrow figure {
+  width: 20%;
+}
+.main .intro .move-arrow figure img {
+  width: 100%;
+}
+.main .intro .move-arrow figure + span {
+  color:#fff;
+  margin-left: 0.5rem;
+}
+.main .intro .intro-ment {
+  border : 1px solid #333;
+  padding: 2rem 0;
+}
+.main .intro .intro-ment .main-ment {
+  font-family: 'Orbit-Regular', sans-serif;
+  font-size: 2rem;
+  line-height: 1.4;
+  text-align: center;
+  margin-bottom: 2rem;
+  word-break: keep-all;
+}
+.main .intro .intro-ment .sub-ment{
+  width: 55%;
+  margin: auto;
+  font-size: 1.2rem;
+  word-break: keep-all;
+  text-align: center;
+  color:#555
+}
+/* 포트폴리오 리스트 */
+.main .portfolio-list h2 {
+  font-size: 1.5rem;
+  margin-bottom: 6rem;
+  padding: 0 1rem;
+  position: relative;
+  font-weight: 600;
+}
+.main .portfolio-list h2::after {
+  content:'';
+  display: block;
+  width: 5px;
+  height: 100%;
+  background-color: #333;
+  position: absolute;
+  left: 0;
+  top:50%;
+  transform: translateY(-50%);
+}
+.main .portfolio-list .portfolio {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.main .portfolio-list article {
+  cursor: pointer;
+  width: 28%;
+}
+.main .portfolio-list figure img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.main .portfolio-list .list-title a {
+  font-size:1.2rem;
+  font-weight: 600;
+  padding: 0.5rem 0;
+  display: block;
+}
+.main .portfolio-list .list-title .list-sub-title {
+  font-size: 0.9rem;
+  color:#555
+}
+.main .portfolio-list .tag-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.main .portfolio-list .tag-list li {
+  padding: 0.2rem 0.5rem ;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5rem;
+  color:#fff;
+}
+
+/* 애니메이션 동작 */
+@keyframes move-background {
+  0% {filter: hue-rotate(0deg);}
+  100% {filter: hue-rotate(360deg);}
+}
+
+@keyframes move-arrow {
+  0% {transform: translateY(0);}
+  100% {transform: translateY(1rem);}
+}
+
+
+/* 반응형 */
+@media screen and (max-width : 1280px) {
+  .main .container .inner {width: 90%;}
+}
+@media screen and (max-width : 1024px) {
+  .main .intro .intro-ment {
+    padding: 2rem;
+  }
+  .main .intro .intro-ment .main-ment {
+    font-size:1.2rem;
+  }
+  .main .intro .intro-ment .sub-ment {
+    font-size: 0.9rem;
+  }
+  .main .portfolio-list article {
+    width: 45%;
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width : 500px) {
+  .main .portfolio-list article {
+    width: 90%;
+  }
+}
